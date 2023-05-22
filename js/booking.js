@@ -1,5 +1,5 @@
-var el = document.getElementById('passenger');
-var el2 = document.getElementById('test-5-fp');
+var el = document.getElementById('test-5-remove');
+var el2 = document.getElementById('test-5-price');
 var count = 1;
 var price = 6322;
 function plus(){
