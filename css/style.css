@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@font-face {
+  font-family: "DOCKER THREE";
+  src: url("../fonts/docker-three/docker-three.eot");
+  src: url("../fonts/docker-three/docker-three.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/docker-three/docker-three.otf") format("opentype"), 
+    url("../fonts/docker-three/docker-three.svg") format("svg"), 
+    url("../fonts/docker-three/docker-three.ttf") format("truetype"), 
+    url("../fonts/docker-three/docker-three.woff") format("woff"), 
+    url("../fonts/docker-three/docker-three.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  height: 100%;
+  margin: 0;
+}
+                                         /* Header */
+header{
+  width: 100%;
+  height: 130px;
+  border-bottom: 2px solid grey;
+}
+.header{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+ max-width: 1300px;
+}
+.logo{
+  position: relative;
+  text-align: center;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo img{
+  display: inline-block;
+  width: 105px;
+}
+.logo p{
+  color: black;
+  font-size: 13px;
+  margin-top: 0;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+.logo p .fa.fa-quote-left{
+  position: absolute;
+  font-size: 9px;
+  left: -10px;
+  bottom: 12px;
+}
+.logo p .fa.fa-quote-right{
+  position: absolute;
+  font-size: 9px;
+  right: -10px;
+  bottom: 19px;
+}
+.test-0-nav{
+  height: 100px;
+}
+.test-0-nav ul{
+  margin: 0;
+  height: 100%;
+  list-style: none;
+}
+.test-0-nav li{
+  display: flex;
+  align-items: center;
+  float: left;
+  height: 100%;
+  margin: 0 80px;
+}
+.test-0-nav a{
+  position: relative;
+  font-size: 20px;
+  padding: 15px 0;
+  text-decoration: none;
+  color: grey;
+}
+.test-0-nav a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.7s;
+}
+.test-0-nav a:hover:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+}
+.test-0-nav-1:before{
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f295";
+    width: 25px;
+    padding: 16.5px 0;
+    bottom: -1px;
+    left: -25px;
+    color: #404040;
+}
+.test-0-nav-2:before{
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f002";
+    width: 25px;
+    padding: 16.5px 0;
+    bottom: -1px;
+    left: -25px;
+    color: #404040;
+}
+.test-0-nav-4:before{
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f2be";
+    width: 25px;
+    padding: 16.5px 0;
+    bottom: -1px;
+    left: -25px;
+    color: black;
+}
+                                        /* End Header */
+
+                                          /*Main*/
+.stripe{
+  border-bottom: 2px solid grey;
+  width: 100%;
+  margin-bottom: 100px;
+}
+main{
+  position: relative;
+  margin: 0 300px;
+  height: 100%;
+}
+.buy-ticket fieldset {
+  border: transparent;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+    padding: 25px;
+}
+.buy-ticket legend{
+    position: absolute;
+    font-size: 19px;
+    font-family: Cambria;
+    font-weight: 400;
+    left: 0;
+    top: -55px;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    border-top: 2px solid grey;
+    padding: 15px 15px;
+}
+.buy-ticket legend:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;  
+    border-top: 15px solid white;
+    border-right: 15px solid grey;
+}
+.buy-ticket div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 205px;
+  height: 40px;
+  border-right: 2px solid grey;
+  text-align: center;
+}
+.test-0-fd{
+  text-align: center;
+  height: 35px;
+}
+.test-0-fd:invalid{
+  color: grey;
+}
+.test-0-fd option:not(:first-child){
+  color: black;
+}
+.test-0-fa{
+  text-align: center;
+  height: 35px;
+}
+.test-0-fa:invalid{
+  color: grey;
+}
+.test-0-fa option:not(:first-child){
+  color: black;
+}
+.test-0-fdt{
+  border: 2px solid;
+  height: 37px;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+}
+.buy-ticket input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.test-0-fat{
+  font-size: 14px;
+  height: 37px;
+  text-align: center;
+  cursor: pointer;
+}
+.test-0-fnp{
+   font-size: 14px;
+   height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+.buy-ticket input,select{
+  font-size: 17px;
+  width: 200px;
+  border: transparent;
+}
+.buy-ticket input:focus,select:focus{
+  outline: 3px solid #42aaff;
+}
+.test-0-fbs{
+  font-size: 16px;
+  float: right;
+   padding: 9px;
+  cursor: pointer;
+  background-color: #42aaff;
+  border: 3px solid black;
+  border-radius: 2em;
+  color: #f5f5f5;
+  transition: all 0.2s;
+}
+.test-0-fbs:hover{
+  text-shadow: 1px 1px 5px grey;
+  color: white;
+}
+.stocks{
+  margin-top: 80px;
+}
+.stocks h1{
+  display: inline-block;
+  font-size: 37px;
+  font-family: cambria;
+  border-bottom: 2px solid #42aaff;
+}
+.stocks > div{
+  width: 100%;
+  height: 350px;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.stocks > div:not(:last-child){
+  margin-bottom: 30px;
+}
+.test-0-ai-left{
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+.test-0-ai-right{
+  width: 40%;
+  height: 100%;
+  float: right;
+}
+.test-0-ai{
+  width: 100%;
+  height: 100%;
+}
+.test-0-content-left{
+  position: relative;
+  float: left;
+  border-top: 3px solid grey;
+  border-right: 3px solid grey;
+  border-bottom: 3px solid grey;
+  width: 59.6%;
+  height: 98.4%;
+  border-radius:0 2em 2em 0;
+}
+.test-0-content-right{
+  position: relative;
+  float: right;
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+  border-bottom: 3px solid grey;
+  width: 59.6%;
+  height: 98.4%;
+  border-radius:2em 0 0 2em;
+}
+.test-0-an{
+  font-family: cambria;
+  margin-top: 50px;
+  text-align: center;
+}
+.test-0-ad{
+  font-size: 19Px;
+  text-align: center;
+  padding:10px 100px;
+  font-family: arial;
+}
+.test-0-abm{
+  position: absolute;
+  left: 43%;
+  bottom: 40px;
+  font-size: 16px;
+   padding: 9px;
+  cursor: pointer;
+  background-color: #42aaff;
+  border: transparent;
+  box-shadow: 1px 1px 10px black;
+  color: #f5f5f5;
+  font-family: 'Arial';
+  transition: background 0.5s;
+}
+.test-0-abm:hover{
+  background: #1E90FF;
+}
+.reviews h1{
+   margin-top: 80px;
+   display: inline-block;
+  font-size: 37px;
+  font-family: cambria;
+  border-bottom: 2px solid #42aaff;
+}
+.reviews ul{
+  display: inline-block;
+  margin-top: -5px;
+   padding-left: 0;
+   margin-bottom: 0px;
+}
+.reviews li{
+  float: left;
+  border-radius: 2em;
+  width: 33.1%;
+  list-style: none;
+}
+.reviews li h2{
+  margin-left: 35px;
+  float: left;
+  padding: 1px;
+}
+.reviews li time{
+  float: right;
+  margin-right: 20px;
+  padding: 25px;
+  color: grey;
+  opacity: 0.5;
+  font-size: 16px;
+  font-family: monospace;
+}
+.reviews .star{
+  clear: both;
+  position: relative;
+  top: -25px;
+  display: block;
+  padding:5px 35px;
+}
+.reviews .star i{
+  margin-right: 5px;
+  color: yellow;
+  text-shadow: 0 0 2px black; 
+}
+.reviews .feedback{
+    overflow:auto;
+  margin-top: -19px;
+  padding: 0 35px;
+  font-size: 19px;
+  height: 385px;
+  font-family: monospace;
+}
+.subscription{
+  margin-bottom: 70px;
+}
+.subscription h1{
+   margin-top: 80px;
+   display: inline-block;
+  font-size: 37px;
+  font-family: Cambria;
+  border-bottom: 2px solid #42aaff;
+}
+.subscription-main{
+  text-align: center;
+  padding-bottom: 20px;
+  border: 3px solid grey;
+  border-radius: 50px;
+}
+.subscription p{
+  font-size: 19Px;
+  line-height: 1.4;
+  padding: 0 50px;
+  font-family: arial;
+}
+.subscription-main > label{
+    margin-left: 90px;
+    font-size: 20px;
+    font-family: monospace;
+    margin-left: -50px;
+    margin-right: 15px;
+}
+.test-0-sie{
+  font-size: 16px;
+  width: 40%;
+  height: 25px;
+  outline: 3px solid grey;
+  border-radius: 5px;
+  border: transparent;
+}
+.test-0-sie:focus{
+  outline: 3px solid #42aaff; 
+}
+.test-0-sbs{
+  margin-left: 100px;
+   font-size: 16px;
+   font-family: arial;
+   padding: 13px;
+  cursor: pointer;
+  background-color: #42aaff;
+  border: transparent;
+  box-shadow: 1px 1px 10px black;
+  color: #f5f5f5;
+  border-radius: 5px;
+  transition: background 0.5s;
+}
+.test-0-sbs:hover{
+  background: #1E90FF;
+}
+                              /*search*/
+.search h1{
+  display: inline-block;
+  font-size: 37px;
+  font-family: Cambria;
+  border-bottom: 2px solid #42aaff;
+}
+.search .flight{
+  margin-top: -25px;
+}
+.search .flight h3{
+  font-size: 24px;
+}
+.search .flight h3 .fa.fa-circle{
+  font-size: 10px;
+  position: relative;
+  top: -2px;
+}
+.search .flight>p{
+  color: grey;
+  font-size: 18px;
+  margin-top: -10px;
+}
+.ticket{
+  box-sizing: border-box;
+  padding: 5px 30px;
+  width: 100%;
+  border: 3px solid grey;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+.ticket:last-child{
+  margin-bottom: 100px;
+}
+.ticket .company{
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 50%;
+}
+.ticket .company p{
+  font-size: 18px;
+  font-family: arial;
+  margin-left: 10px;
+}
+.ticket .company img{
+  width: 85px;
+}
+.flight .ticket .favourites{
+  margin-top: 5px;
+  float: right;
+}
+.flight .ticket .favourites button{
+  display: inline-block;
+  font-size: 20px;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: transparent;
+}
+.flight .ticket .favourites i{
+  text-shadow: 0 0 3px black;
+}
+.ticket-container{
+  display: inline-block;
+  width: 100%;
+}
+.ticket-container .time{
+  margin-right: 50px;
+  float: left;
+  display: inline-block;
+}
+.ticket-container .time1{
+   height: 30px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.ticket-container .time1 p{
+  font-size: 25px;
+  font-family:'Montserrat';
+  font-weight: 600;
+}
+.ticket-container .time .separation{
+  color: grey;
+  font-size: 14px;
+}
+.ticket-container .date{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1px;
+  height: 30px;
+}
+.ticket-container .date p{
+  font-size: 15px;
+  color: grey;
+}
+.ticket-container .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.ticket-container .info p{
+  font-size: 17px;
+  font-family: arial;
+}
+.ticket-button{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 15px;
+}
+.ticket-button a{
+   font-size: 18px;
+   padding: 13px;
+  cursor: pointer;
+  background-color: #42aaff;
+  border: transparent;
+  box-shadow: 1px 1px 10px black;
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: background 0.5s;
+  border-radius: 30px;
+}
+.ticket-button a:hover{
+  background: #1E90FF;
+}
+                              /*Log in*/
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 537px;
+}
+.login-container{
+  display: inline-block;
+   width: 40%;
+}
+.login-container form{
+  border: 3px solid grey;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 450px;
+  text-align: center;
+}
+.login-container form h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat';
+}
+.login-container form input{
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+.login-container form p{
+  margin-bottom: -2px;
+  font-size: 16px;
+  font-family: arial;
+  color: grey;
+}
+.login-container .log-error{
+  color: red;
+  display: none;
+}
+.login-container form p a{
+  text-decoration: none;
+  color: grey;
+  margin-left: 5px; 
+  transition: all 0.6s ease;
+}
+.login-container form p a:hover{
+  text-decoration: underline;
+}
+.login-container form .test-1-fbs{
+  border-radius: 20px;
+  border: transparent;
+  background-color: #42aaff;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  transition: background-color 0.5s;
+}
+.login-container form .test-1-fbs:hover{
+  background: #1E90FF;
+}
+                              /*Register*/
+.register{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-container{
+  display: inline-block;
+  margin: 50px 0;
+    width: 40%
+  }
+.register-container form{
+  border: 3px solid grey;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+.register-container form h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat';
+}
+.register-container form input{
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+.register-container form .test-2-btn{
+  border-radius: 20px;
+  border: 1px solid #42aaff;
+  background-color: #42aaff;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  transition: background 0.5s;
+}
+.register-container form p{
+  display: none;
+  width: 350px;
+  color: red;
+  margin: 5px;
+}
+.register-container form .test-2-btn:hover{
+ background: #1E90FF;
+}
+                              /*Profile*/
+
+.profile .profile-container{
+  margin-bottom: 50px;
+  position: relative;
+  padding: 15px;
+  border-radius: 20px;
+}
+.profile h1{
+  display: inline-block;
+  font-size: 37px;
+  font-family: cambria;
+  border-bottom: 2px solid #42aaff;
+}
+.profile-container .account-details{
+  position: relative;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.profile-container .account-details img{
+  width: 120px;
+  height: auto;
+  margin-right: 10px;
+}
+.profile-container .account-details p{
+  font-family: 'Cambria';
+  font-size: 30px;
+  padding: 0 5px;
+}
+.profile-container .logout{
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}
+.logout .test-3-logout{
+  text-decoration: none;
+  font-size: 16px;
+  font-family: arial;
+   padding: 9px;
+  cursor: pointer;
+  background-color: #42aaff;
+  border: transparent;
+  box-shadow: 0 0 3px black;
+  color: #f5f5f5;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  transition: background 0.5s;
+}
+.logout .test-3-logout:hover{
+  background-color: #1E90FF;
+}
+.profile-container .account-details .test-3-num{
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  font-size: 20px;
+}
+.profile-container h2{
+  font-family: arial;
+  font-weight: 500;
+}                             /*Booking*/
+.booking{
+  height: 537px;
+}
+.booking .booking-container h1{
+  margin-bottom: 30px;
+   display: inline-block;
+  font-size: 37px;
+  font-family: Cambria;
+  border-bottom: 2px solid #42aaff;
+}
+.booking-container .passengers{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  float: right;
+  font-size: 25px;
+}
+.booking-container .passengers span{
+  font-size: 17px;
+  font-family: arial;
+}
+.booking-container .passengers p{
+  margin: 0;
+}
+.booking-container .passengers button{
+  border: transparent;
+  background: #42aaff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.booking-container .passengers button:hover{
+  background: #1E90FF;
+}
+.booking-container h3{
+  font-family: arial;
+  font-size: 20px;
+  font-weight: 500;
+}
+.booking-container form{
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.booking-container form input{
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin-right: 30px;
+  width: 25%;
+}
+
+                              /*End Main*/
+
+                              /*Footer*/
+footer{
+  width: 100%;
+  background: #24262b;
+  height: 300px;
+}
+.footer{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+ max-width: 1300px;
+}
+.footer .footer-first{
+  height: 75%;
+  margin-left: 100px;
+  width: 25%;
+}
+.footer-first p:first-child{
+  font-family: "DOCKER THREE";
+  font-size: 27px;
+  font-weight: 400;
+  color: #42aaff;
+}
+.footer-first p:not(:first-child){
+    color: white;
+    font-size: 16px;
+    margin-top: -10px;
+    opacity: 0.7;
+    font-weight: 100;
+  }
+.footer-first .networks{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 200px;
+}
+.footer-first .networks a{
+  text-decoration: none;
+  height: 40px;
+  width: 40px;
+  margin:0 10px 10px 0;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  border: transparent;
+  background-color: rgba(255,255,255,0.2);
+  transition: all 0.5s ease;
+}
+.footer-first .networks a:hover{
+  color: #24262b;
+  background-color: white;
+  }
+.footer .footer-navigation{
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 4vw;
+  width: 24%;
+  height: 75%;
+}
+.footer-navigation h4{
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: -10px;
+}
+.footer-navigation>ul{
+  display: inline-block;
+  padding-left: 0;
+  list-style: none;
+}
+.footer-navigation ul li a{
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #8a8a8a;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-navigation ul li a:hover{
+  color: white;
+  margin-left: 10px;
+}
+.footer-navigation .test-0-phone{
+  margin-top: 30px;
+  color: #8a8a8a;
+}
+.footer-navigation .test-0-phone span{
+  color: white;
+  font-size: 15px;
+}
+

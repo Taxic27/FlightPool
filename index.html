@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlightPool</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+                                  <!--Шапка-->
+<header>
+	<div class="header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="image/logo.jpg">
+        <p><i class="fa fa-quote-left" aria-hidden="true"></i>Мы сближаем города, вы – живете там, где хотите<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+			</a>
+		</div>
+		<nav class="test-0-nav">
+			<ul>
+				<li><a href="index.html#stocks" class="test-0-nav-1">Акции</a></li>
+            	 <li><a href="index.html#buy-ticket" class="test-0-nav-2">Поиск</a></li>
+            	 <li><a href="login.html" class="test-0-nav-4">Личный кабинет</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+                                  <!--Конец. Шапка-->
+                                  <!--Основная часть-->
+<div id="slider">
+  <div class="slides">
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Основные принципы работы сервиса</h1>
+          <h2>
+            1.  Выбрать удобную дату перелета.<br>
+            2.  Накопить больше 50% бронирований на рейс.<br>
+            3.  Получить снижение стоимости.
+          </h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="image/airbus.jpg" class="image-1">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Комфортный перелет</h1>
+          <h2>На нашем борту вы найдете просторные и удобные сиденья, что позволяет путешествовать с максимальным комфортом</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="image/cabin.jpg" class="image-2">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Авиационный персонал</h1>
+          <h2>Наш персонал обладает высоким уровнем знаний и опыта, а также умеет находить индивидуальный подход к каждому пассажиру</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="image/personal.jpg" class="image-3">
+      </div>
+    </div>
+    <div class="slider" >
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Авиабилеты</h1>
+          <h2> Мы предлагаем вам самые низкие цены на билеты и множество дополнительных услуг. У нас вы можете выбрать рейсы на любой вкус и бюджет.</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="image/ticket.jpg" class="image-4">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Удобные рейсы</h1>
+          <h2>Будь то отдых на пляже или деловая поездка за рубеж, мы готовы предложить вам выгодные тарифы на перелеты в любую точку мира</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="image/fly.jpg" class="image-5">
+      </div>
+    </div>
+  </div>
+  <div class="switch">
+    <ul>
+      <li>
+        <div class="on"></div>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+<div class="stripe" id="buy-ticket"></div>
+<main class="index">
+  <form class="buy-ticket" action="search.html">
+    <fieldset>
+      <legend>Поиск билетов</legend>
+      <div><select required class="test-0-fd">
+    <option selected disabled value="">Откуда</option>
+    <option>Москва</option>
+    <option>Санкт-Петербург</option>
+    <option>Анапа</option>
+    <option>Самара</option>
+    <option>Казань</option>
+    <option>Новосибирск</option>
+    <option>Пско</option>
+    <option>Кипр</option>
+    </select>
+  </div>
+  <div><select required class="test-0-fa">
+    <option selected disabled value="">Куда</option>
+    <option>Москва</option>
+    <option>Санкт-Петербург</option>
+    <option>Анапа</option>
+    <option>Самара</option>
+    <option>Казань</option>
+    <option>Новосибирск</option>
+    <option>Псков</option>
+    <option>Кипр</option>
+    </select>
+  </div>
+  <div><input type="text" placeholder="Туда" min="2023-05-21" max="2025-01-01" required onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" class="test-0-fdt"></div>
+  <div><input type="text" placeholder="Обратно" min="2023-05-21" max="2025-01-01" required onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"class="test-0-fat">
+  </div>
+  <div><input type="number" required placeholder="Кол-во пассажиров" class="test-0-fnp" min="1" max="8"></div>
+  <button type="submit" class="test-0-fbs">Найти билеты</button>
+    </fieldset>
+  </form>
+  <div class="stocks">
+    <h1 id="stocks">Акции</h1>
+    <div>
+      <div class="test-0-ai-left">
+        <img src="image/promotion1.jpg" class="test-0-ai">
+      </div>
+        <div class="test-0-content-left">
+          <h2 class="test-0-an">Возврат и замена Ваших билетов</h2>
+          <p class="test-0-ad">Пандемия изменила планы многих путешественников, но мы знаем, что это не будет длиться вечно.
+          Как только все это закончится, мы продолжим исследовать этот мир так, как привыкли.
+          Специальные правила, разработанные для этой сложной ситуации, помогут вам отменить свою поездку
+          или отложить ее на более поздний срок.</p>
+          <button type="button" class="test-0-abm">Подробнее</button>
+        </div>
+    </div>
+    <div>
+      <div class="test-0-ai-right">
+        <img src="image/promotion2.jpg" class="test-0-ai">
+      </div>
+        <div class="test-0-content-right">
+          <h2 class="test-0-an">Лучшие предложения</h2>
+          <p class="test-0-ad">Снова увидеть улицы, которые были свидетелями столького. Обнять своих любимых и оглянуться назад, чтобы увидеть, через что вы прошли. И думать о новых мечтах, которые будут такими особенными!</p>
+          <button type="button" class="test-0-abm">Подробнее</button>
+        </div>
+    </div>
+    <div>
+       <div class="test-0-ai-left">
+        <img src="image/promotion3.jpg" class="test-0-ai">
+      </div>
+        <div class="test-0-content-left">
+          <h2 class="test-0-an">Увидимся почаще</h2>
+          <p class="test-0-ad">С начала января мы расширяем географию полетов по России, чтобы вы могли
+чаще видеться со своими близкими. Выберите нашу компанию, чтобы лететь туда, где вас всегда ждут.</p>
+          <button type="button" class="test-0-abm">Подробнее</button>
+        </div>
+    </div>
+    <div>
+      <div class="test-0-ai-right">
+        <img src="image/promotion4.jpg" class="test-0-ai">
+      </div>
+        <div class="test-0-content-right">
+          <h2 class="test-0-an">Все снова включилось</h2>
+          <p class="test-0-ad">С 10 августа мы возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться ежедневно два раза
+в день, а рейсы по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю.</p>
+          <button type="submit" class="test-0-abm">Подробнее</button>
+        </div>
+    </div>
+  </div>
+  <div class="reviews">
+   <h1>Отзывы</h1>
+   <ul>
+    <li>
+      <h2 class="reviews-name">Влад</h2>
+      <time datetime="">15-05-2023</time>
+      <p class="star"><i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </p>
+      <p class="feedback">Я очень доволен полетом с данной авиакомпанией! Все прошло отлично, от регистрации до приземления. Персонал очень внимательный и дружелюбный, всегда готовы помочь и ответить на вопросы пассажиров. Самолет был комфортным и чистым. Я уже не первый раз летаю с этой авиакомпанией и каждый раз остаюсь довольным! Спасибо за качественный сервис!</p>
+    </li>
+    <li><h2 class="reviews-name">Дарья</h2>
+      <time datetime="">13-05-2023</time>
+      <p class="star"><i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+      </p>
+      <p class="feedback">Я летала с данной авиакомпанией недавно и в целом могу сказать, что осталась довольна услугами. Были некоторые моменты, которые несколько омрачили мой полет, поэтому я ставлю 4 звезды.<br>
+      <br>
+      Плюсы: 
+      <br>
+      - Комфортные кресла, достаточно места для ног и широкие подлокотники<br>
+      - Питание во время полета было вкусным и разнообразным<br>
+      - Рейс был проведен вовремя<br>
+      <br>
+      Минусы:
+      <br>
+      - Уборка самолета оставляла желать лучшего, я заметила на своем месте остатки еды от предыдущего пассажира<br>
+      - Немного задержали багаж<br>
+      - Персонал не всегда был дружелюбным и внимательным</p>
+    </li>
+    <li><h2 class="reviews-name">Всеволод</h2>
+      <time datetime="">09-05-2023</time>
+      <p class="star"><i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+      </p>
+      <p class="feedback">Я несколько раз пользовался услугами авиакомпании FlightPool в последнее время и хотел бы поделиться своим мнением об этой компании. В целом, я остался доволен. Сначала я был немного озадачен отсутствием определенных удобств, таких как проводная зарядка для телефона или бесплатные напитки во время полета. Однако, плюсы данной авиакомпании, в моем понимании, перевешивают этот небольшой недостаток.<br>Первое, что мне понравилось – доступные цены на билеты, которые значительно ниже, чем у других авиакомпаний. Второе – расписание полетов, которое позволяет быстро и удобно добраться до необходимого места назначения. Третье – приятный и вежливый персонал, который стремится помочь пассажирам в любых обстоятельствах.</p>
+    </li>
+      <li><h2 class="reviews-name">Антон</h2>
+      <time datetime="">07-05-2023</time>
+      <p class="star"><i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </p>
+      <p class="feedback">Я очень доволен сервисом и качеством полета авиакомпании. Рейс был комфортабельным и безопасным. Команда пилотов и бортпроводников профессиональна и внимательна к подробностям. В целом, я получил отличный опыт и рекомендую эту авиакомпанию всем моим друзьям и знакомым. Спасибо!</p>
+    </li>
+      <li><h2 class="reviews-name">Витя</h2>
+      <time datetime="">03-05-2023</time>
+      <p class="star"><i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </p>
+      <p class="feedback">Рекомендую авиакомпанию FlightPool всем, кто ищет надежного партнера для своих авиаперелетов. Я часто пользуюсь услугами этой компании и всегда остаюсь доволен. Большой выбор рейсов, удобный интерфейс сайта, простая система бронирования - все это делает путешествия более комфортными и приятными. Кроме того, цены на билеты в FlightPool всегда остаются конкурентными, что тоже важно. В целом, отличная авиакомпания, которой можно доверять.</p>
+    </li>
+      <li><h2 class="reviews-name">Светлана</h2>
+      <time datetime="">29-04-2023</time>
+      <p class="star"><i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </p>
+      <p class="feedback">Недавно использовала услуги авиакомпании FlightPool и осталась довольна своим выбором. Быстрый и простой процесс бронирования билетов, а также приветливый персонал на стойке регистрации – это то, что сразу бросается в глаза. Также приятно, что авиакомпания предлагает не только прямые рейсы, но и трансферы на другие места. Бортовое обслуживание было на высоком уровне, а сам рейс прошел без задержек или каких-либо неприятностей. Единственным минусом была небольшая задержка в получении багажа при прилете, но это мелочи. В целом, рекомендую FlightPool и обязательно воспользуюсь их услугами еще раз</p>
+    </li>
+  </ul>
+ </div>
+ <div class="subscription">
+   <h1>Подписка на закрытые акции</h1>
+   <form class="subscription-main" action="#">
+     <p>Подпишитесь на закрытые акции нашей авиакомпании и получите эксклюзивный доступ к выгодным предложениям и привилегиям. Участие в закрытых акциях даст вам возможность сэкономить на билетах и получить больше возможностей для путешествий. Не упустите шанс стать частью особенных условий и привелегий для наших клиентов.</p>
+     <label>Ваш E-mail</label>
+     <input class="test-0-sie" type="email" required="required">
+     <button class="test-0-sbs" type="submit">Подписаться</button>
+   </form>
+ </div>
+</main>
+                                  <!--Конец. Основная часть-->
+                                  <!--Подвал-->
+<footer>
+  <div class="footer">
+    <div class="footer-first">
+      <p>FlightPool</p>
+      <p>Copyright &copy; 2023</p>
+      <p>Все права защищены</p>
+      <div class="networks">
+        <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="footer-navigation">
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="index.html">Домой</a></li>
+        <li><a href="#">Назад</a></li>
+        <li><a href="login.html">Авторизоваться</a></li>
+        <li><a href="index.html#buy-ticket">Поиск билетов</a></li>
+        <li><a href="index.html#stocks">Акции</a></li>
+        <li><a href="">Контакты</a></li>
+        <li><a href="">Новости</a></li>
+        <li><a href="">Обратная связь</a></li>
+      </ul>
+    </div>
+    <div class="footer-navigation">
+      <h4>Телефон</h4>
+      <p class="test-0-phone"><span>8 (800) 100-10-10</span> бесплатно по России</p>
+    </div>
+  </div>
+</footer>
+                                  <!--Конец. Подвал-->
+</body>
+</html>

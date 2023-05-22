@@ -1,0 +1,203 @@
+#slider{
+  width:100%;
+  height:500px;
+  position:relative;
+  overflow: hidden;
+}
+.slides{
+  width:500%;
+  height:100%;
+  position:relative;
+  border-bottom: 2px solid grey;
+  animation: slide 35s infinite;
+}
+.slider{
+  width:20%;
+  height:100%;
+  float:left;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+}
+.image img{
+  height:auto;
+}
+.image-1{
+  width: 88%;
+  margin-left: 260px;
+  margin-top: -230px;
+}
+.image-2{
+  width: 88%;
+  margin-left: 230px;
+  margin-top: -200px;
+}
+.image-3{
+  margin-left: 400px;
+  margin-top: -35px;
+}
+.image-4{
+  width: 86%;
+  height: 80%;
+  margin-left: 265px;
+  margin-top: -120px;
+}
+.image-5{
+  width: 90%;
+  margin-top: -190px;
+  margin-left: 250px;
+}
+/* Legend */
+.legend{
+  border:750px solid transparent;
+  border-left:800px solid rgba(52, 73, 94);
+  border-bottom:0;
+  position:absolute;
+  bottom:0;
+}
+
+/* Contents */
+.content{
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+}
+.content-txt{
+  width:400px;
+  height:150px;
+  float:left;
+  position:relative;
+  top:200px;
+  animation:content-s 7s infinite;
+}
+.content-txt h1{
+  font-family: arial;
+  text-transform:uppercase;
+  font-size:27px;
+  color:#fff;
+  text-align:left;
+  margin-left:30px;
+  padding-bottom:10px;
+  text-shadow: 0 0 4px black;
+}
+.content-txt h2{
+  font-family:arial;
+  font-weight:normal;
+  font-size:17px;
+  font-style:italic;
+  color:#fff;
+  text-align:left;
+  margin-left:30px;
+}
+
+/* Switch */
+.switch{
+  width:120px;
+  height:10px;
+  position:absolute;
+  bottom:50px;
+  z-index:99;
+  left:250px;
+}
+.switch > ul{
+  list-style:none;
+}
+.switch > ul > li{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#333;
+  float:left;
+  margin-right:5px;
+  cursor:pointer;
+}
+.switch ul{
+  overflow:hidden;
+}
+.on{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background:#f39c12;
+  position:relative;
+  animation:on 35s infinite;
+}
+
+/* Animation */
+@keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  16%{
+    margin-left:0%;
+  }
+  20%{
+    margin-left:-100%;
+  }
+  36%{
+    margin-left:-100%;
+  }
+  40%{
+    margin-left:-200%;
+  }
+  56%{
+    margin-left:-200%;
+  }
+  60%{
+    margin-left:-300%;
+  }
+  76%{
+    margin-left:-300%;
+  }
+  80%{
+    margin-left:-400%;
+  }
+  96%{
+    margin-left:-400%;
+  }
+}
+@keyframes content-s{
+  0%{left:-420px;}
+  10%{left:20px;}
+  30%{left:20px;}
+  40%{left:20px;}
+  50%{left:20px;}
+  60%{left:20px;}
+  70%{left:20px;}
+  80%{left:-420px;}
+  90%{left:-420px;}
+  100%{left:-420px;}
+}
+@keyframes on{
+ 0%,100%{
+    margin-left:0%;
+  }
+  16%{
+    margin-left:0%;
+  }
+  20%{
+    margin-left:15px;
+  }
+  36%{
+    margin-left:15px;
+  }
+  40%{
+    margin-left:30px;
+  }
+  56%{
+    margin-left:30px;
+  }
+  60%{
+    margin-left:45px;
+  }
+  76%{
+    margin-left:45px;
+  }
+  80%{
+    margin-left:60px;
+  }
+  96%{
+    margin-left:60px;
+  }
+}

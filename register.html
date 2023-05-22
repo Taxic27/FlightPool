@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlightPool|Регистрация</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+                                  <!--Шапка-->
+<header>
+	<div class="header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="image/logo.jpg">
+        <p><i class="fa fa-quote-left" aria-hidden="true"></i>Мы сближаем города, вы – живете там, где хотите<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+			</a>
+		</div>
+		<nav class="test-0-nav">
+			<ul>
+				<li><a href="index.html#stocks" class="test-0-nav-1">Акции</a></li>
+               <li><a href="index.html#buy-ticket" class="test-0-nav-2">Поиск</a></li>
+               <li><a href="login.html" class="test-0-nav-4">Личный кабинет</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+                                  <!--Конец. Шапка-->
+                                  <!--Основная часть-->
+<main class="register">
+	<div class="register-container">
+		<form action="login.html" id="reg">
+			<h1>Регистрация</h1>
+      <input type="text" name="name" class="test-2-name" placeholder="Имя" required>
+      <input type="text" name="surname" class="test-2-last" placeholder="Фамилия" required>
+      <input type="number" name="document" class="test-2-doc" placeholder="Номер документа" required>
+			<input type="tel" name="phone" class="test-2-phone" title="Формат: 8 (XXX) XXX-XXXX" pattern="8 [(][0-9]{3}[)] [0-9]{3}-[0-9]{4}" placeholder="Телефон" required />
+			<input type="password" name="password" class="test-2-pass" id="test-2-pass" placeholder="Пароль" required minlength="7" maxlength="50" />
+      <p id="error1">Пароль должен содержать хотя бы 1 цифру</p>
+      <p id="error2">Пароль должен содержать хотя бы один из символов: !, *, $</p>
+      <input type="password" name="password" class="test-2-pass2" id="test-2-pass2" placeholder="Повторите пароль" required minlength="7" maxlength="50" />
+      <p id="error3">Пароли не совпадают</p>
+			<button type="submit" class="test-2-btn" id="test-2-btn" onclick="pass()">Зарегистрироваться</button>
+		</form>
+	</div>
+</main>
+                                  <!--Конец. Основная часть-->
+                                  <!--Подвал-->
+<footer>
+  <div class="footer">
+    <div class="footer-first">
+      <p>FlightPool</p>
+      <p>Copyright &copy; 2023</p>
+      <p>Все права защищены</p>
+      <div class="networks">
+        <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="footer-navigation">
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="index.html">Домой</a></li>
+        <li><a href="#">Назад</a></li>
+        <li><a href="login.html">Авторизоваться</a></li>
+        <li><a href="index.html#buy-ticket">Поиск билетов</a></li>
+        <li><a href="index.html#stocks">Акции</a></li>
+        <li><a href="">Контакты</a></li>
+        <li><a href="">Новости</a></li>
+        <li><a href="">Обратная связь</a></li>
+      </ul>
+    </div>
+    <div class="footer-navigation">
+      <h4>Телефон</h4>
+      <p class="test-0-phone"><span>8 (800) 100-10-10</span> бесплатно по России</p>
+    </div>
+  </div>
+</footer>
+                                  <!--Конец. Подвал-->
+<script src="js/register.js"></script>
+</body>
+</html>

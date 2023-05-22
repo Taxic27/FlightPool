@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlightPool|Авторизация</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+                                  <!--Шапка-->
+<header>
+	<div class="header" id="header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="image/logo.jpg">
+        <p><i class="fa fa-quote-left" aria-hidden="true"></i>Мы сближаем города, вы – живете там, где хотите<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+			</a>
+		</div>
+		<nav class="test-0-nav">
+			<ul>
+				<li><a href="index.html#stocks" class="test-0-nav-1">Акции</a></li>
+               <li><a href="index.html#buy-ticket" class="test-0-nav-2">Поиск</a></li>
+               <li><a href="login.html" class="test-0-nav-4">Личный кабинет</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+                                  <!--Конец. Шапка-->
+                                  <!--Основная часть-->
+<main class="login">
+	<div class="login-container">
+		<form action="profile.html">
+			<h1>Авторизация</h1>
+			<input type="tel" name="phone" class="test-1-fpn" id="test-1-fpn" title="Формат: 8 (XXX) XXX-XXXX" pattern="8 [(][0-9]{3}[)] [0-9]{3}-[0-9]{4}" placeholder="Телефон" required />
+			<input type="password" name="password" class="test-1-fps" id="test-1-fps" placeholder="Пароль" required minlength="7" maxlength="50" />
+      <p class="log-error" id="log-error">Данные неверны</p>
+			<p><a href="#">Забыли пароль?</a></p>
+			<p>Еще нет аккаунта?<a href="register.html">Зарегистрируйтесь</a></p>
+			<button type="submit" class="test-1-fbs" onclick="check()">Войти</button>
+		</form>
+	</div>
+
+</main>
+                                  <!--Конец. Основная часть-->
+                                  <!--Подвал-->
+<footer>
+  <div class="footer">
+    <div class="footer-first">
+      <p>FlightPool</p>
+      <p>Copyright &copy; 2023</p>
+      <p>Все права защищены</p>
+      <div class="networks">
+        <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="footer-navigation">
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="index.html">Домой</a></li>
+        <li><a href="#">Назад</a></li>
+        <li><a href="login.html">Авторизоваться</a></li>
+        <li><a href="index.html#buy-ticket">Поиск билетов</a></li>
+        <li><a href="index.html#stocks">Акции</a></li>
+        <li><a href="">Контакты</a></li>
+        <li><a href="">Новости</a></li>
+        <li><a href="">Обратная связь</a></li>
+      </ul>
+    </div>
+    <div class="footer-navigation">
+      <h4>Телефон</h4>
+      <p class="test-0-phone"><span>8 (800) 100-10-10</span> бесплатно по России</p>
+    </div>
+  </div>
+</footer>
+                                  <!--Конец. Подвал-->
+<script src="js/login.js"></script>
+</body>
+</html>
